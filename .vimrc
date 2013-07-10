@@ -128,6 +128,13 @@ let g:mapleader = ","
 " выключаем  режим замены
 imap >Ins> <Esc>i
 
+" copy paste, using xclip
+vmap <C-c> y:call system("xclip -i -selection clipboard", getreg("\""))<CR>:call system("xclip -i", getreg("\""))<CR>
+map <C-v> :call setreg("\"",system("xclip -o -selection clipboard"))<CR>p
+imap <C-v> <Esc><C-v>a
+nmap <MiddleMouse> :-1r !xclip -o -selection primary<CR>$
+imap <MiddleMouse> <Esc><MiddleMouse>a
+
 " vim-unimpaired
 " переместить строку вверх/вниз
 nmap <C-Up> [e
