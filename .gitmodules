@@ -3,7 +3,7 @@
 	url = git@github.com:vim-scripts/SuperTab-continued..git
 [submodule "bundle/bufexplorer"]
 	path = bundle/bufexplorer
-	url = git@github.com:vim-scripts/SuperTab-continued..git
+	url = git@github.com:vim-scripts/bufexplorer.zip.git
 [submodule "bundle/delimitmate"]
 	path = bundle/delimitmate
 	url = git@github.com:Raimondi/delimitMate.git
