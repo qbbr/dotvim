@@ -40,7 +40,7 @@ bundles
 `unimpaired`- перемещение строк в верх/низ  
 `vim-css3-syntax` - подсветка css3 файлов  
 `vim-css-color` - визуальное отображение цвета в CSS  
-`vim-fakeclip` - копирование vim <-> X  
+`vim-fakeclip` - копирование vim &lt;-&gt; X  
 `vim-less` - подсветка less файлов  
 `vim-symfony` - snippets for symfony2  
 `vim-twig` - подсветка twig файлов и snippets for snipmate  
@@ -49,7 +49,7 @@ bundles
 hotkeys
 -------
 
-`,` - <leader>
+`,` - &lt;leader&gt;
 
 `<F4>` - NERDTree  
 `<F5>` - BufExplorer  
@@ -61,7 +61,7 @@ hotkeys
 
 `;` - поиск и замена слова под курсором
 
-`<C-Up>`  - переместить строку или множество выделенных строк вверх на одну строку (vim-unimpaired)  
+`<C-Up>`  - переместить строку или множество выделенных строк вверх на одну строку (unimpaired)  
 `<C-Down>` - переместить строку или множество выделенных строк вниз на одну строку
 
 `,c<space>` - закомментировать/раскомментировать код
