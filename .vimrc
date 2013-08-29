@@ -98,6 +98,7 @@ set sessionoptions=curdir,buffers,tabpages  " опции сессий
 "set spelllang=ru,en                         " список языков
 
 syntax on                                   " подсветка синтаксиса
+set cursorline                              " подсветка текущей строки
 filetype on                                 " включить определение типа файла (~/.vim/filetype.vim)
 filetype plugin on                          " включить загрузку модулей
 filetype indent on                          " включить загрузку сценариев настройки отступов
