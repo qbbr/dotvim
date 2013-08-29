@@ -31,3 +31,6 @@
 [submodule "bundle/vim-less"]
 	path = bundle/vim-less
 	url = git@github.com:groenewege/vim-less.git
+[submodule "bundle/vim-symfony"]
+	path = bundle/vim-symfony
+	url = git@github.com:qbbr/vim-symfony.git
