@@ -25,3 +25,6 @@
 [submodule "bundle/vim-fakeclip"]
 	path = bundle/vim-fakeclip
 	url = git@github.com:kana/vim-fakeclip.git
+[submodule "bundle/snipmate"]
+	path = bundle/snipmate
+	url = git://github.com/msanders/snipmate.vim.git
