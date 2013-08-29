@@ -37,3 +37,6 @@
 [submodule "bundle/vim-twig"]
 	path = bundle/vim-twig
 	url = git@github.com:qbbr/vim-twig.git
+[submodule "bundle/vim-css-color"]
+	path = bundle/vim-css-color
+	url = git@github.com:ap/vim-css-color.git
