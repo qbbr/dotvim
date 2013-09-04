@@ -46,3 +46,6 @@
 [submodule "bundle/nerdcommenter"]
 	path = bundle/nerdcommenter
 	url = git@github.com:scrooloose/nerdcommenter.git
+[submodule "bundle/closetag"]
+	path = bundle/closetag
+	url = git@github.com:vim-scripts/closetag.vim.git
