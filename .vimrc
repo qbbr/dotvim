@@ -14,6 +14,7 @@
 " Sokolov Innokenty, <imqbbr@gmail.com>
 "--------------------------------------------
 
+
 execute pathogen#infect()
 
 set nocompatible                            " режим несовместимый с Vi
@@ -106,6 +107,9 @@ filetype indent on                          " включить загрузку 
 set t_Co=256                                " включаем поддержку 256 цветов
 colorscheme wombat256mod
 
+autocmd FileType php,html,twig,yml set expandtab
+" fix closetag
+autocmd FileType twig,htmltwig let b:unaryTagsStack=""
 
 "=======================
 "=== горячие клавиши ===
