@@ -33,7 +33,7 @@ bundles
 `bufexplorer` - удобное переключение между буферами  
 `closetag` - автозакрытие html/xml тегов  
 `delimitmate` - автозакрытие кавычек, скобок и т.д  
-`emmet-vim` - zencoding--
+`emmet-vim` - zencoding  
 `nerdcommenter` - комментирование кода  
 `nerdtree` - файловый менеджер в виде дерева  
 `repeat` - повторение операций  
