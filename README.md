@@ -33,6 +33,7 @@ bundles
 `bufexplorer` - удобное переключение между буферами  
 `closetag` - автозакрытие html/xml тегов  
 `delimitmate` - автозакрытие кавычек, скобок и т.д  
+`emmet-vim` - zencoding--
 `nerdcommenter` - комментирование кода  
 `nerdtree` - файловый менеджер в виде дерева  
 `repeat` - повторение операций  
@@ -68,6 +69,8 @@ hotkeys
 
 `,c<space>` - закомментировать/раскомментировать код
 
-`<C-_>` - автозакрытие html/xml тега  
+`<C-_>` - автозакрытие html/xml тега
+
+`<C-y>,` - zencoding
 
 `_$` - удалить лишние отступы в конце строк (StripTrailingWhitespaces)
