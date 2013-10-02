@@ -49,3 +49,6 @@
 [submodule "bundle/closetag"]
 	path = bundle/closetag
 	url = git@github.com:vim-scripts/closetag.vim.git
+[submodule "bundle/emmet-vim"]
+	path = bundle/emmet-vim
+	url = git@github.com:mattn/emmet-vim.git
