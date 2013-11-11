@@ -112,6 +112,9 @@ autocmd FileType php,html,twig,yml set expandtab
 " fix closetag
 autocmd FileType twig,htmltwig let b:unaryTagsStack=""
 
+" CtrlP
+set wildignore+=*/app/cache/*,*/app/logs/*,*.so,*.swp,*.zip
+
 "=======================
 "=== горячие клавиши ===
 "=======================
