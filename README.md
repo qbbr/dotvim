@@ -7,7 +7,7 @@ dotvim
 	| |_| | |_) | |_) |  _ <  \__ \
 	 \__\_\____/|____/|_| \_\ |___/
 
-				 _
+		         _
 		 __   __(_)_ __ ___
 		 \ \ / /| | '_ ` _ \
 		  \ V / | | | | | | |
@@ -35,6 +35,7 @@ bundles
 `ctrlp` - поиск файлов  
 `delimitmate` - автозакрытие кавычек, скобок и т.д  
 `emmet-vim` - zencoding  
+`jsbeautify` - js formatter  
 `nerdcommenter` - комментирование кода  
 `nerdtree` - файловый менеджер в виде дерева  
 `repeat` - повторение операций  
@@ -77,3 +78,5 @@ hotkeys
 `<C-p>` - ctrlp
 
 `_$` - удалить лишние отступы в конце строк (StripTrailingWhitespaces)
+
+`<C-f>` - jsbeautify

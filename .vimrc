@@ -184,3 +184,9 @@ imap <F7> <esc>:bn<cr>i
 nmap <F12> :Ex<cr>
 vmap <F12> <esc>:Ex<cr>i
 imap <F12> <esc>:Ex<cr>i
+
+" jsbeautify
+"map <C-f> :call JsBeautify()<cr>
+autocmd FileType javascript noremap <buffer>  <C-f> :call JsBeautify()<cr>
+autocmd FileType html noremap <buffer> <C-f> :call HtmlBeautify()<cr>
+autocmd FileType css noremap <buffer> <C-f> :call CSSBeautify()<cr>
