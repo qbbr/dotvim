@@ -38,6 +38,7 @@ bundles
 `jsbeautify` - js formatter  
 `nerdcommenter` - комментирование кода  
 `nerdtree` - файловый менеджер в виде дерева  
+`nginx` - подсветка nginx файлов (/etc/nginx/*)  
 `repeat` - повторение операций  
 `snipmate` - поддержка сниппетов  
 `supertab-continued` - autocomplete по табу  
