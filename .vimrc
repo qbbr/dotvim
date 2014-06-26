@@ -111,6 +111,8 @@ colorscheme wombat256mod
 autocmd FileType php,html,twig,yml set expandtab
 " fix closetag
 autocmd FileType twig,htmltwig let b:unaryTagsStack=""
+" nginx
+autocmd BufRead,BufNewFile /etc/nginx/* if &ft == '' | setfiletype nginx | endif
 
 " CtrlP
 set wildignore+=*/app/cache/*,*/app/logs/*,*.so,*.swp,*.zip

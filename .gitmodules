@@ -61,3 +61,6 @@
 [submodule "bundle/supertab"]
 	path = bundle/supertab
 	url = https://github.com/vim-scripts/SuperTab--Van-Dewoestine.git
+[submodule "bundle/nginx"]
+	path = bundle/nginx
+	url = https://github.com/vim-scripts/nginx.vim.git
