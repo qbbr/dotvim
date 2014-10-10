@@ -1,6 +1,3 @@
-[submodule "bundle/supertab-continued"]
-	path = bundle/supertab-continued
-	url = https://github.com/vim-scripts/SuperTab-continued..git
 [submodule "bundle/bufexplorer"]
 	path = bundle/bufexplorer
 	url = https://github.com/vim-scripts/bufexplorer.zip.git
