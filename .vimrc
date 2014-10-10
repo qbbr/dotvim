@@ -192,3 +192,7 @@ imap <F12> <esc>:Ex<cr>i
 autocmd FileType javascript noremap <buffer>  <C-f> :call JsBeautify()<cr>
 autocmd FileType html noremap <buffer> <C-f> :call HtmlBeautify()<cr>
 autocmd FileType css noremap <buffer> <C-f> :call CSSBeautify()<cr>
+
+" supertab
+let g:SuperTabMappingForward = '<nul>'
+let g:SuperTabMappingBackward = '<s-nul>'
