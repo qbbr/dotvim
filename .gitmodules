@@ -57,7 +57,7 @@
 	url = https://github.com/maksimr/vim-jsbeautify.git
 [submodule "bundle/supertab"]
 	path = bundle/supertab
-	url = https://github.com/vim-scripts/SuperTab--Van-Dewoestine.git
+	url = https://github.com/ervandew/supertab.git
 [submodule "bundle/nginx"]
 	path = bundle/nginx
 	url = https://github.com/vim-scripts/nginx.vim.git
