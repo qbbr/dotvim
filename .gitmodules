@@ -64,3 +64,9 @@
 [submodule "bundle/nginx"]
 	path = bundle/nginx
 	url = https://github.com/vim-scripts/nginx.vim.git
+[submodule "bundle/dir-diff"]
+	path = bundle/dir-diff
+	url = https://github.com/vim-scripts/DirDiff.vim.git
+[submodule "bundle/vim-startify"]
+	path = bundle/vim-startify
+	url = https://github.com/mhinz/vim-startify.git
