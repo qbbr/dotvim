@@ -114,6 +114,11 @@ autocmd FileType twig,htmltwig let b:unaryTagsStack=""
 " nginx
 autocmd BufRead,BufNewFile /etc/nginx/* if &ft == '' | setfiletype nginx | endif
 
+augroup markdown
+    au!
+    au BufNewFile,BufRead *.md,*.markdown setlocal filetype=ghmarkdown
+augroup END
+
 " CtrlP
 set wildignore+=*/app/cache/*,*/app/logs/*,*.so,*.swp,*.zip
 
