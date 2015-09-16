@@ -41,7 +41,6 @@ bundles
 `nginx` - подсветка nginx файлов (/etc/nginx/*)  
 `repeat` - повторение операций  
 `snipmate` - поддержка сниппетов  
-`supertab-continued` - autocomplete по табу  
 `surround`- работа со скобками/кавычками/тегами  
 `unimpaired`- перемещение строк в верх/низ  
 `vim-css3-syntax` - подсветка css3 файлов  
@@ -63,8 +62,6 @@ hotkeys
 `<F6>` - prev buffer  
 `<F7>` - next buffer  
 `<F12>` - Ex
-
-`<TAB>` - автодополнение слов (supertab) и snipmate
 
 `;` - поиск и замена слова под курсором
 
