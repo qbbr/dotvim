@@ -201,3 +201,9 @@ autocmd FileType css noremap <buffer> <C-f> :call CSSBeautify()<cr>
 " supertab
 let g:SuperTabMappingForward = '<nul>'
 let g:SuperTabMappingBackward = '<s-nul>'
+
+" Don't run messdetector on save (default = 1)
+let g:phpqa_messdetector_autorun = 0
+
+" Don't run codesniffer on save (default = 1)
+let g:phpqa_codesniffer_autorun = 0

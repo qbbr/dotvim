@@ -48,6 +48,7 @@ bundles
 `vim-fakeclip` - копирование vim &lt;-&gt; X  
 `vim-flavored-markdown` - подсветка markdown--
 `vim-less` - подсветка less файлов  
+`vim-phpqa` - PHP QA Tools For Vim  
 `vim-symfony` - snippets for symfony2  
 `vim-twig` - подсветка twig файлов и snippets for snipmate  
 `wombat256mod` - цветовая схема

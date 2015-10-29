@@ -67,3 +67,6 @@
 [submodule "bundle/vim-flavored-markdown"]
 	path = bundle/vim-flavored-markdown
 	url = git://github.com/jtratner/vim-flavored-markdown.git
+[submodule "bundle/vim-phpqa"]
+	path = bundle/vim-phpqa
+	url = https://github.com/joonty/vim-phpqa.git
