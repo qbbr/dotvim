@@ -34,7 +34,6 @@ bundles
 `ctrlp` - поиск файлов  
 `delimitmate` - автозакрытие кавычек, скобок и т.д  
 `emmet-vim` - zencoding  
-`jsbeautify` - js formatter  
 `nerdcommenter` - комментирование кода  
 `nerdtree` - файловый менеджер в виде дерева  
 `nginx` - подсветка nginx файлов (/etc/nginx/*)  
@@ -76,4 +75,4 @@ hotkeys
 
 `_$` - удалить лишние отступы в конце строк (StripTrailingWhitespaces)
 
-`<C-f>` - jsbeautify
+`<C-f>` - symfony console

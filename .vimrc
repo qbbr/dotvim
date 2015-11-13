@@ -192,15 +192,8 @@ nmap <F12> :Ex<cr>
 vmap <F12> <esc>:Ex<cr>i
 imap <F12> <esc>:Ex<cr>i
 
-" jsbeautify
-"map <C-f> :call JsBeautify()<cr>
-autocmd FileType javascript noremap <buffer>  <C-f> :call JsBeautify()<cr>
-autocmd FileType html noremap <buffer> <C-f> :call HtmlBeautify()<cr>
-autocmd FileType css noremap <buffer> <C-f> :call CSSBeautify()<cr>
-
-" supertab
-let g:SuperTabMappingForward = '<nul>'
-let g:SuperTabMappingBackward = '<s-nul>'
+" vim-symfony console <C-F>
+let g:symfony_enable_shell_mapping = 1
 
 " Don't run messdetector on save (default = 1)
 let g:phpqa_messdetector_autorun = 0
