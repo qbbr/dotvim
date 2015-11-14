@@ -44,7 +44,7 @@ bundles
 `vim-css3-syntax` - подсветка css3 файлов  
 `vim-css-color` - визуальное отображение цвета в CSS  
 `vim-fakeclip` - копирование vim &lt;-&gt; X  
-`vim-flavored-markdown` - подсветка markdown--
+`vim-flavored-markdown` - подсветка markdown  
 `vim-less` - подсветка less файлов  
 `vim-phpqa` - PHP QA Tools For Vim  
 `vim-symfony` - snippets for symfony2  
