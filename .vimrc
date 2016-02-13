@@ -108,7 +108,7 @@ filetype indent on                          " включить загрузку 
 set t_Co=256                                " включаем поддержку 256 цветов
 colorscheme wombat256mod
 
-autocmd FileType php,html,twig,yml set expandtab
+autocmd FileType php,html,twig,yaml,javascript,css,scss set expandtab
 " fix closetag
 autocmd FileType twig,htmltwig let b:unaryTagsStack=""
 " nginx
