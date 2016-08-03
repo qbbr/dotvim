@@ -237,3 +237,6 @@ let g:phpqa_codesniffer_autorun = 0
 
 " startify
 let g:startify_custom_header =[]
+
+" vim-javascript
+let g:javascript_plugin_jsdoc = 1
