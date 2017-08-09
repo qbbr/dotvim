@@ -13,7 +13,7 @@ dotvim
 		  \ V / | | | | | | |
 		   \_/  |_|_| |_| |_|
 
-install
+Installation
 -------
 
 ```bash
@@ -22,12 +22,12 @@ git clone --recursive git://github.com/qbbr/dotvim.git .vim
 ln -s .vim/.vimrc
 ```
 
-screenshot
+Screenshot
 ----------
 
 ![qbbr-vim](https://lh5.googleusercontent.com/-L7E5YoiCkDE/Uh79KB_eGhI/AAAAAAAABQw/CK-JLr4dwvI/s700/qbbr-vim.png)
 
-bundles
+Bundles
 -------
 
 `bufexplorer` - удобное переключение между буферами  
@@ -51,7 +51,7 @@ bundles
 `vim-twig` - подсветка twig файлов и snippets for snipmate  
 `wombat256mod` - цветовая схема
 
-hotkeys
+Hotkeys
 -------
 
 `,` - &lt;leader&gt;
