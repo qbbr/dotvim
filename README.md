@@ -1,20 +1,18 @@
-dotvim
-======
+# QBBR dotvim
 
-	  ___  ____  ____  ____  _
-	 / _ \| __ )| __ )|  _ \( )___
-	| | | |  _ \|  _ \| |_) |// __|
-	| |_| | |_) | |_) |  _ <  \__ \
-	 \__\_\____/|____/|_| \_\ |___/
+	  ____  ____  ____  _____
+	 / __ \|  _ \|  _ \|  __ \
+	| |  | | |_) | |_) | |__) |
+	| |  | |  _ <|  _ <|  _  /
+	| |__| | |_) | |_) | | \ \
+	 \___\_\____/|____/|_| _\_\
+	     _       _         _
+	  __| | ___ | |___   _(_)_ __ ___
+	 / _` |/ _ \| __\ \ / / | '_ ` _ \
+	| (_| | (_) | |_ \ V /| | | | | | |
+	 \__,_|\___/ \__| \_/ |_|_| |_| |_|
 
-		         _
-		 __   __(_)_ __ ___
-		 \ \ / /| | '_ ` _ \
-		  \ V / | | | | | | |
-		   \_/  |_|_| |_| |_|
-
-Installation
--------
+## Installation
 
 ```bash
 cd ~
@@ -22,13 +20,11 @@ git clone --recursive https://github.com/qbbr/dotvim.git .vim
 ln -s .vim/.vimrc
 ```
 
-Screenshot
-----------
+## Screenshot
 
 ![qbbr-vim](https://lh5.googleusercontent.com/-L7E5YoiCkDE/Uh79KB_eGhI/AAAAAAAABQw/CK-JLr4dwvI/s700/qbbr-vim.png)
 
-Bundles
--------
+## Bundles
 
 `bufexplorer` - удобное переключение между буферами  
 `ctrlp` - поиск файлов  
@@ -51,8 +47,7 @@ Bundles
 `vim-twig` - подсветка twig файлов и snippets for snipmate  
 `wombat256mod` - цветовая схема
 
-Hotkeys
--------
+## Hotkeys
 
 `,` - &lt;leader&gt;
 
