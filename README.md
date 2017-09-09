@@ -18,7 +18,7 @@ Installation
 
 ```bash
 cd ~
-git clone --recursive git://github.com/qbbr/dotvim.git .vim
+git clone --recursive https://github.com/qbbr/dotvim.git .vim
 ln -s .vim/.vimrc
 ```
 
