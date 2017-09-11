@@ -105,7 +105,7 @@ filetype on                                 " включить определе�
 filetype plugin on                          " включить загрузку модулей
 filetype indent on                          " включить загрузку сценариев настройки отступов
 
-set t_Co=256                                " включаем поддержку 256 цветовa
+set t_Co=256                                " включаем поддержку 256 цветов
 colorscheme solarized8_dark_flat
 
 autocmd FileType php,html,twig,yaml,javascript,css,scss set expandtab
