@@ -105,8 +105,8 @@ filetype on                                 " включить определе�
 filetype plugin on                          " включить загрузку модулей
 filetype indent on                          " включить загрузку сценариев настройки отступов
 
-set t_Co=256                                " включаем поддержку 256 цветов
-colorscheme wombat256mod
+set t_Co=256                                " включаем поддержку 256 цветовa
+colorscheme solarized8_dark_flat
 
 autocmd FileType php,html,twig,yaml,javascript,css,scss set expandtab
 " fix closetag
@@ -171,8 +171,6 @@ let g:NERDTreeDirArrowExpandable = '~'
 let g:NERDTreeDirArrowCollapsible = '+'
 let NERDTreeIgnore=['\.pyc', '\.swp', '\.git$', '\.hg', '\.svn', '\.bzr']
 let NERDTreeShowHidden=1
-hi Normal ctermbg=233
-hi Directory cterm=bold ctermfg=blue
 
 " NERDTress File highlighting
 function! NERDTreeHighlightFile(extension, fg, bg)
