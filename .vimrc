@@ -14,7 +14,6 @@
 " Sokolov Innokenty, <imqbbr@gmail.com>
 "--------------------------------------------
 
-
 execute pathogen#infect()
 
 set nocompatible                            " режим несовместимый с Vi
@@ -86,7 +85,7 @@ set statusline+=%h%1*%m%r%w%0*              " флаги
 set statusline+=[%{&encoding},              " кодировка
 set statusline+=%{&fileformat}]             " формат файла
 set statusline+=\ %{strlen(&ft)?&ft:'none'} " тип файла
-"set statusline+=\ %{fugitive#statusline()}  " git
+set statusline+=\ %{fugitive#statusline()}  " git
 set statusline+=%=                          " выравнивание по правой стороне (align right)
 set statusline+=%2*0x%-8B\                  " текущий символ
 set statusline+=%-10.(%l,%c%V%)\ %<%P       " номер строки, номер столбца]
