@@ -22,7 +22,7 @@ ln -s .vim/.vimrc
 
 ## Screenshot
 
-![qbbr-vim](https://lh5.googleusercontent.com/-L7E5YoiCkDE/Uh79KB_eGhI/AAAAAAAABQw/CK-JLr4dwvI/s700/qbbr-vim.png)
+![qbbr-vim](https://i.imgur.com/wU8VET1.png)
 
 ## Bundles
 
@@ -41,11 +41,14 @@ ln -s .vim/.vimrc
 `vim-css-color` - визуальное отображение цвета в CSS  
 `vim-fakeclip` - копирование vim &lt;-&gt; X  
 `vim-flavored-markdown` - подсветка markdown  
+`vim-fugitive` - git wrapper  
+`vim-javascript` - улучшенная подсветка js  
 `vim-less` - подсветка less файлов  
 `vim-phpqa` - PHP QA Tools For Vim  
+`vim-startify` - start screen  
 `vim-symfony` - snippets for symfony2  
 `vim-twig` - подсветка twig файлов и snippets for snipmate  
-`wombat256mod` - цветовая схема
+`vim-vue` - подсветка vue файлов
 
 ## Hotkeys
 
