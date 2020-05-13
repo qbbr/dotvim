@@ -107,6 +107,7 @@ filetype indent on                          " включить загрузку 
 set t_Co=256                                " включаем поддержку 256 цветов
 
 autocmd FileType php,html,twig,yaml,javascript,css,scss set expandtab
+autocmd FileType yml,yaml set shiftwidth=2 softtabstop=2 tabstop=2
 " fix closetag
 autocmd FileType twig,htmltwig let b:unaryTagsStack=""
 " nginx
@@ -157,6 +158,10 @@ nmap <C-Down> ]e
 " переместить выделенные строки вверх/вниз
 vmap <C-Up> [egv
 vmap <C-Down> ]egv
+
+" nerdcommenter
+let g:NERDDefaultAlign = 'left'
+let g:NERDCommentEmptyLines = 1
 
 " поиск и замена слова под курсором
 nmap ; :%s/\<<c-r>=expand("<cword>")<cr>\>/
