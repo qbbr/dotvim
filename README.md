@@ -38,7 +38,6 @@ ln -s .vim/.vimrc
 `surround`- работа со скобками/кавычками/тегами  
 `unimpaired`- перемещение строк в верх/низ  
 `vim-css3-syntax` - подсветка css3 файлов  
-`vim-css-color` - визуальное отображение цвета в CSS  
 `vim-fakeclip` - копирование vim &lt;-&gt; X  
 `vim-flavored-markdown` - подсветка markdown  
 `vim-fugitive` - git wrapper  
