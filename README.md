@@ -41,7 +41,6 @@ ln -s .vim/.vimrc
 `vim-fakeclip` - копирование vim &lt;-&gt; X  
 `vim-flavored-markdown` - подсветка markdown  
 `vim-fugitive` - git wrapper  
-`vim-gitgutter` - git diff в колонке (gutter)  
 `vim-javascript` - улучшенная подсветка js  
 `vim-less` - подсветка less файлов  
 `vim-phpqa` - PHP QA Tools For Vim  
