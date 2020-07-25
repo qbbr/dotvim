@@ -190,7 +190,9 @@ endfunction
 
 call NERDTreeHighlightFile('ini', '143', 'none')
 call NERDTreeHighlightFile('md', '184', 'none')
+call NERDTreeHighlightFile('markdown', '184', 'none')
 call NERDTreeHighlightFile('yml', '208', 'none')
+call NERDTreeHighlightFile('yaml', '208', 'none')
 call NERDTreeHighlightFile('log', '178', 'none')
 call NERDTreeHighlightFile('txt', '192', 'none')
 
