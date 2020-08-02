@@ -88,10 +88,10 @@ set statusline+=\ %{strlen(&ft)?&ft:'none'} " тип файла
 set statusline+=\ %{fugitive#statusline()}  " git
 set statusline+=%=                          " выравнивание по правой стороне (align right)
 set statusline+=%2*0x%-8B\                  " текущий символ
-set statusline+=%-10.(%l,%c%V%)\ %<%P       " номер строки, номер столбца]
+set statusline+=%-10.(%l,%c%V%)\ %<%P       " номер строки, номер столбца
 set laststatus=2
 
-set smartindent                             " умные отступы (после{)
+set smartindent                             " умные отступы после '{'
 set fo+=cr                                  " Fix <Enter> for comment
 set sessionoptions=curdir,buffers,tabpages  " опции сессий
 
@@ -107,7 +107,7 @@ filetype indent on                          " включить загрузку 
 set t_Co=256                                " включаем поддержку 256 цветов
 set background=dark
 " https://github.com/lifepillar/vim-solarized8
-"let g:solarized_termtrans=1
+let g:solarized_termtrans=1
 "let g:solarized_old_cursor_style=1
 "let g:solarized_extra_hi_groups=1
 let g:solarized_use16=1
@@ -118,12 +118,11 @@ autocmd FileType yml,yaml set shiftwidth=2 softtabstop=2 tabstop=2
 " fix closetag
 autocmd FileType twig,htmltwig let b:unaryTagsStack=""
 " nginx
-autocmd BufRead,BufNewFile /etc/nginx/* if &ft == '' | setfiletype nginx | endif
-
-augroup markdown
-    au!
-    au BufNewFile,BufRead *.md,*.markdown setlocal filetype=ghmarkdown
-augroup END
+autocmd BufNewFile,BufRead /etc/nginx/* if &ft == '' | setlocal filetype=nginx | endif
+" typescript
+autocmd BufNewFile,BufRead *.ts setlocal filetype=javascript
+" markdown
+autocmd BufNewFile,BufRead *.md,*.markdown setlocal filetype=ghmarkdown
 
 " CtrlP
 set wildignore+=*/app/cache/*,*/app/logs/*,*.so,*.swp,*.zip
