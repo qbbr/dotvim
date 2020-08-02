@@ -34,9 +34,16 @@ set wildmenu                                " показывать все воз
 set wcm=<TAB>
 set wildmode=list:longest,full              " вывести весь список сразу доступных вариантов, а затем перебором
 
-"set foldenable                              " выключаем фолдинг (сворачивание блоков кода)
+" folding
+" https://vim.fandom.com/wiki/Folding
+" zc / zo / za - on cursor close / open / toggle
+" zC / zO / zA - all folding levels on cursor
+" zM / zR - close / open all folds
+" [z / ]z - jump to start / end
+set nofoldenable                            " выключаем фолдинг (сворачивание блоков кода)
+"set foldenable                             " или включаем
 "set foldmethod=indent                       " фолдинг по отступам
-"set foldcolumn=1                            " колонка, чтобы показывать плюсики для скрытия блоков кода
+set foldcolumn=1                            " колонка, чтобы показывать плюсики для скрытия блоков кода
 
 "set hlsearch                                " включаем подсветку выражения, которое ищется в тексте (:nohlsearch отключает подсветку)
 set incsearch                               " поиск по набору текста
