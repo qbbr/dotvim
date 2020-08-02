@@ -125,7 +125,7 @@ autocmd BufNewFile,BufRead *.ts setlocal filetype=javascript
 autocmd BufNewFile,BufRead *.md,*.markdown setlocal filetype=ghmarkdown
 
 " CtrlP
-set wildignore+=*/app/cache/*,*/app/logs/*,*.so,*.swp,*.zip
+set wildignore+=*/app/cache/*,*/app/logs/*,*/var/cache/*,*/var/log/*,*/node_modules/*,*/vendor/*,*/log/*,*/tmp/*,*.so,*.swp,*.zip
 
 "=======================
 "=== горячие клавиши ===
