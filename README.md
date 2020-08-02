@@ -38,6 +38,7 @@ ln -s .vim/.vimrc
 `snipmate` - поддержка сниппетов  
 `surround`- работа со скобками/кавычками/тегами  
 `unimpaired`- перемещение строк в верх/низ  
+`vim-bash-snippets` - мои bash сниппеты  
 `vim-css3-syntax` - подсветка css3 файлов  
 `vim-fakeclip` - копирование vim &lt;-&gt; X  
 `vim-flavored-markdown` - подсветка markdown  
