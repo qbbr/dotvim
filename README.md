@@ -29,6 +29,7 @@ ln -s .vim/.vimrc
 `bufexplorer` - удобное переключение между буферами  
 `ctrlp` - поиск файлов  
 `delimitmate` - автозакрытие кавычек, скобок и т.д  
+`editorconfig-vim` - CS [EditorConfig](https://editorconfig.org/)  
 `emmet-vim` - zencoding  
 `nerdcommenter` - комментирование кода  
 `nerdtree` - файловый менеджер в виде дерева  
