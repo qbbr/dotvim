@@ -64,12 +64,12 @@
 [submodule "bundle/vim-vue"]
 	path = bundle/vim-vue
 	url = https://github.com/posva/vim-vue.git
-[submodule "bundle/vim-solarized8"]
-	path = bundle/vim-solarized8
-	url = https://github.com/lifepillar/vim-solarized8.git
 [submodule "bundle/editorconfig-vim"]
 	path = bundle/editorconfig-vim
 	url = https://github.com/editorconfig/editorconfig-vim.git
 [submodule "bundle/vim-bash-snippets"]
 	path = bundle/vim-bash-snippets
 	url = https://github.com/qbbr/vim-bash-snippets.git
+[submodule "bundle/vim-colors-solarized"]
+	path = bundle/vim-colors-solarized
+	url = https://github.com/altercation/vim-colors-solarized

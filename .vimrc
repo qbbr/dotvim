@@ -113,12 +113,13 @@ filetype indent on                          " включить загрузку 
 
 set t_Co=256                                " включаем поддержку 256 цветов
 set background=dark
-" https://github.com/lifepillar/vim-solarized8
-let g:solarized_termtrans=1
-"let g:solarized_old_cursor_style=1
-"let g:solarized_extra_hi_groups=1
-let g:solarized_use16=1
-colorscheme solarized8_high
+
+" https://github.com/altercation/vim-colors-solarized
+let g:solarized_termcolors=16
+"let g:solarized_termtrans=1
+let g:solarized_italic=0
+let g:solarized_contrast="high"
+colorscheme solarized
 
 autocmd FileType php,html,twig,yaml,javascript,css,scss set expandtab
 autocmd FileType yml,yaml set shiftwidth=2 softtabstop=2 tabstop=2
