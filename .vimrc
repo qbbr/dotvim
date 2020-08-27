@@ -52,7 +52,13 @@ set smartcase                               " если искомое выраж
 
 set backup                                  " сохранять резервную копию файла
 set backupdir=~/.vim/backups/               " сюда
-set dir=/tmp                                " директория для swap файлов
+
+" директория для swap файлов
+if empty($TMPDIR) " проверяем ENV переменную TMPDIR (android termux fix)
+	set dir=/tmp
+else
+	set dir=$TMPDIR
+endif
 
 set scrolljump=7                            " минимальное количество строк остающихся выше/ниже курсора
 set scrolloff=7                             " минимальное количество строк при скроле
