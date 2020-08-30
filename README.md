@@ -41,6 +41,7 @@ ln -s .vim/.vimrc
 `vim-bash-snippets` - мои bash сниппеты  
 `vim-colors-solarized` - solarized colorscheme  
 `vim-css3-syntax` - подсветка css3 файлов  
+`vim-css-color` - подсветка цветов в css  
 `vim-fakeclip` - копирование vim &lt;-&gt; X  
 `vim-flavored-markdown` - подсветка markdown  
 `vim-fugitive` - git wrapper  
