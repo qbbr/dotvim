@@ -249,9 +249,6 @@ nmap <F12> :Ex<cr>
 vmap <F12> <esc>:Ex<cr>i
 imap <F12> <esc>:Ex<cr>i
 
-" vim-symfony console <C-F>
-let g:symfony_enable_shell_mapping = 1
-
 " Don't run messdetector on save (default = 1)
 let g:phpqa_messdetector_autorun = 0
 
