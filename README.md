@@ -74,5 +74,3 @@ ln -s .vim/.vimrc
 `<C-p>` - ctrlp
 
 `_$` - удалить лишние отступы в конце строк (StripTrailingWhitespaces)
-
-`<C-f>` - symfony console
