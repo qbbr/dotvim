@@ -56,21 +56,20 @@ ln -s .vim/.vimrc
 
 `,` - &lt;leader&gt;
 
-`<F4>` - nerdtree  
-`<F5>` - bufexplorer  
+`;` - поиск и замена слова под курсором  
+`_$` - удалить лишние отступы в конце строк (StripTrailingWhitespaces)
+
+`<C-c>/<C-v>` - copy-pase (xclip)  
+`<MiddleMouse>` - pase (xclip)
+
+`<C-Up>/<C-Down>`  - переместить строку или множество выделенных строк вверх/вниз на одну строку (unimpaired)  
+`,c<space>` - закомментировать/раскомментировать код (nerdcommenter)
+
+`<F4>` - toggle nerdtree  
+`<F5>` - toggle bufexplorer  
 `<F6>` - prev buffer  
 `<F7>` - next buffer  
 `<F12>` - netrw
 
-`;` - поиск и замена слова под курсором
-
-`<C-Up>`  - переместить строку или множество выделенных строк вверх на одну строку (unimpaired)  
-`<C-Down>` - переместить строку или множество выделенных строк вниз на одну строку
-
-`,c<space>` - закомментировать/раскомментировать код
-
+`<C-p>` - ctrlp  
 `<C-y>,` - zencoding
-
-`<C-p>` - ctrlp
-
-`_$` - удалить лишние отступы в конце строк (StripTrailingWhitespaces)

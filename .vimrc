@@ -11,9 +11,9 @@
 "        _\ V / | | | | | | | | | (__
 "       (_)\_/  |_|_| |_| |_|_|  \___|
 "
-" Sokolov Innokenty, <imqbbr@gmail.com>
 "--------------------------------------------
 
+" @plugin: pathogen
 execute pathogen#infect()
 
 set nocompatible                            " режим несовместимый с Vi
