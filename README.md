@@ -33,7 +33,7 @@ ln -s .vim/.vimrc
 `emmet-vim` - zencoding  
 `nerdcommenter` - комментирование кода  
 `nerdtree` - файловый менеджер в виде дерева  
-`nginx` - подсветка nginx файлов (/etc/nginx/*)  
+`nginx.vim` - подсветка nginx файлов (/etc/nginx/*)  
 `repeat` - повторение операций  
 `snipmate` - поддержка сниппетов  
 `surround`- работа со скобками/кавычками/тегами  
@@ -60,7 +60,7 @@ ln -s .vim/.vimrc
 `<F5>` - bufexplorer  
 `<F6>` - prev buffer  
 `<F7>` - next buffer  
-`<F12>` - Ex
+`<F12>` - netrw
 
 `;` - поиск и замена слова под курсором
 

@@ -246,10 +246,17 @@ nmap <F7> :bn<cr>
 vmap <F7> <esc>:bn<cr>i
 imap <F7> <esc>:bn<cr>i
 
+" netrw
+let g:netrw_banner = 0
+let g:netrw_liststyle = 3
+let g:netrw_browse_split = 4
+let g:netrw_altv = 1
+let g:netrw_winsize = 25
+let g:netrw_liststyle = 3
 " F12 - обозреватель файлов
-nmap <F12> :Ex<cr>
-vmap <F12> <esc>:Ex<cr>i
-imap <F12> <esc>:Ex<cr>i
+nmap <F12> :Vexplore<cr>
+vmap <F12> <esc>:Vexplore<cr>i
+imap <F12> <esc>:Vexplore<cr>i
 
 " @plugin: ctrlp
 set wildignore+=*/app/cache/*,*/app/logs/*,*/var/cache/*,*/var/log/*,*/node_modules/*,*/vendor/*,*/log/*,*/tmp/*,*.so,*.swp,*.zip
