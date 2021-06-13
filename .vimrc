@@ -195,6 +195,10 @@ let g:NERDTreeDirArrowExpandable = '~'
 let g:NERDTreeDirArrowCollapsible = '+'
 let NERDTreeIgnore=['\.pyc', '\.swp', '\.git$', '\.hg', '\.svn', '\.bzr']
 let NERDTreeShowHidden=1
+augroup ProjectDrawer
+    autocmd!
+    autocmd VimEnter * if argc() == 0 | NERDTree | endif
+augroup END
 
 " NERDTree file highlighting
 function! NERDTreeHighlightFile(extension, fg, bg)
