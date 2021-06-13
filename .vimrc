@@ -120,6 +120,7 @@ filetype indent on                          " включить загрузку 
 set t_Co=256                                " включаем поддержку 256 цветов
 set background=dark
 
+" тема
 " https://github.com/altercation/vim-colors-solarized
 let g:solarized_termcolors=16
 "let g:solarized_termtrans=1
@@ -138,40 +139,42 @@ autocmd BufNewFile,BufRead *.ts setlocal filetype=javascript
 " markdown
 autocmd BufNewFile,BufRead *.md,*.markdown setlocal filetype=ghmarkdown
 
-" CtrlP
-set wildignore+=*/app/cache/*,*/app/logs/*,*/var/cache/*,*/var/log/*,*/node_modules/*,*/vendor/*,*/log/*,*/tmp/*,*.so,*.swp,*.zip
-
 "=======================
 "=== горячие клавиши ===
 "=======================
 
+" выключаем  режим замены
+imap >Ins> <Esc>i
+
+" переназначаем mapleader, по-умолчанию "\"
+let mapleader = ","
+let g:mapleader = ","
+
+" поиск и замена слова под курсором
+nmap ; :%s/\<<c-r>=expand("<cword>")<cr>\>/
+
+" удаляем пробелы в конце строк (_$)
 function! StripTrailingWhitespaces(command)
-    " Preparation: save last search, and cursor position.
+    " save last search, and cursor position
     let _s=@/
     let l = line(".")
     let c = col(".")
-    " Do the business:
     execute a:command
-    " Clean up: restore previous search history, and cursor position
+    " clean up: restore previous search history, and cursor position
     let @/=_s
     call cursor(l, c)
 endfunction
 nmap _$ :call StripTrailingWhitespaces("%s/\\s\\+$//e")<CR>
 
-let mapleader = ","
-let g:mapleader = ","
-
-" выключаем  режим замены
-imap >Ins> <Esc>i
-
-" copy paste, using xclip
+" copy-paste
+" @depends: xclip
 vmap <C-c> y:call system("xclip -i -selection clipboard", getreg("\""))<CR>:call system("xclip -i", getreg("\""))<CR>
 map <C-v> :call setreg("\"",system("xclip -o -selection clipboard"))<CR>p
 imap <C-v> <Esc><C-v>a
 nmap <MiddleMouse> :-1r !xclip -o -selection primary<CR>$
 imap <MiddleMouse> <Esc><MiddleMouse>a
 
-" vim-unimpaired
+" @plugin: unimpaired
 " переместить строку вверх/вниз
 nmap <C-Up> [e
 nmap <C-Down> ]e
@@ -179,14 +182,12 @@ nmap <C-Down> ]e
 vmap <C-Up> [egv
 vmap <C-Down> ]egv
 
-" nerdcommenter
+" @pluigin: nerdcommenter
 let g:NERDDefaultAlign = 'left'
 let g:NERDCommentEmptyLines = 1
 
-" поиск и замена слова под курсором
-nmap ; :%s/\<<c-r>=expand("<cword>")<cr>\>/
-
-" F4 - NERDTree
+" @plugin: nerdtree
+" F4 - toggle NERDTree
 nmap <F4> :NERDTreeToggle<CR>
 vmap <F4> <esc>:NERDTreeToggle<CR>
 imap <F4> <esc>:NERDTreeToggle<CR>
@@ -195,7 +196,7 @@ let g:NERDTreeDirArrowCollapsible = '+'
 let NERDTreeIgnore=['\.pyc', '\.swp', '\.git$', '\.hg', '\.svn', '\.bzr']
 let NERDTreeShowHidden=1
 
-" NERDTress File highlighting
+" NERDTree file highlighting
 function! NERDTreeHighlightFile(extension, fg, bg)
     exec 'autocmd filetype nerdtree highlight ' . a:extension .' ctermbg='. a:bg .' ctermfg='. a:fg
     exec 'autocmd filetype nerdtree syn match ' . a:extension .' #^\s\+.*'. a:extension .'$#'
@@ -229,6 +230,7 @@ call NERDTreeHighlightFile('htaccess', '240', 'none')
 call NERDTreeHighlightFile('lock', '245', 'none')
 "let NERDTreeKeepTreeInNewTab=1
 
+" @plugin: bufexplorer
 " F5 - просмотр списка буферов
 nmap <F5> <Esc>:BufExplorer<cr>
 vmap <F5> <esc>:BufExplorer<cr>
@@ -249,14 +251,17 @@ nmap <F12> :Ex<cr>
 vmap <F12> <esc>:Ex<cr>i
 imap <F12> <esc>:Ex<cr>i
 
-" Don't run messdetector on save (default = 1)
-let g:phpqa_messdetector_autorun = 0
+" @plugin: ctrlp
+set wildignore+=*/app/cache/*,*/app/logs/*,*/var/cache/*,*/var/log/*,*/node_modules/*,*/vendor/*,*/log/*,*/tmp/*,*.so,*.swp,*.zip
 
-" Don't run codesniffer on save (default = 1)
+" @plugin: vim-phpqa
+" don't run messdetector on save (default = 1)
+let g:phpqa_messdetector_autorun = 0
+" don't run codesniffer on save (default = 1)
 let g:phpqa_codesniffer_autorun = 0
 
-" startify
-let g:startify_custom_header =[]
+" @plugin: vim-startify
+let g:startify_custom_header = []
 
-" vim-javascript
+" @plugin: vim-javascript
 let g:javascript_plugin_jsdoc = 1

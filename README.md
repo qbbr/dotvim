@@ -56,8 +56,8 @@ ln -s .vim/.vimrc
 
 `,` - &lt;leader&gt;
 
-`<F4>` - NERDTree  
-`<F5>` - BufExplorer  
+`<F4>` - nerdtree  
+`<F5>` - bufexplorer  
 `<F6>` - prev buffer  
 `<F7>` - next buffer  
 `<F12>` - Ex
