@@ -232,9 +232,9 @@ call NERDTreeHighlightFile('lock', '245', 'none')
 
 " @plugin: bufexplorer
 " F5 - просмотр списка буферов
-nmap <F5> <Esc>:BufExplorer<cr>
-vmap <F5> <esc>:BufExplorer<cr>
-imap <F5> <esc><esc>:BufExplorer<cr>
+nmap <F5> <Esc>:ToggleBufExplorer<cr>
+vmap <F5> <esc>:ToggleBufExplorer<cr>
+imap <F5> <esc><esc>:ToggleBufExplorer<cr>
 
 " F6 - предыдущий буфер
 nmap <F6> :bp<cr>
