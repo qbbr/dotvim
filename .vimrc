@@ -224,6 +224,9 @@ function! NERDTreeHighlightFile(extension, fg, bg)
     exec 'autocmd filetype nerdtree syn match ' . a:extension .' #^\s\+.*'. a:extension .'$#'
 endfunction
 
+highlight NERDTreeDir ctermfg=cyan cterm=bold
+highlight NERDTreeExecFile ctermfg=green cterm=bold
+
 call NERDTreeHighlightFile('ini', '143', 'none')
 call NERDTreeHighlightFile('md', '184', 'none')
 call NERDTreeHighlightFile('markdown', '184', 'none')
