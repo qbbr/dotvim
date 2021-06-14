@@ -195,6 +195,24 @@ let g:NERDTreeDirArrowExpandable = '~'
 let g:NERDTreeDirArrowCollapsible = '+'
 let NERDTreeIgnore=['\.pyc', '\.swp', '\.git$', '\.hg', '\.svn', '\.bzr']
 let NERDTreeShowHidden=1
+
+" @see: https://codeyarns.com/tech/2014-05-05-how-to-highlight-current-file-in-nerdtree.html
+" check if NERDTree is open or active
+function! IsNERDTreeOpen()
+  return exists('t:NERDTreeBufName') && (bufwinnr(t:NERDTreeBufName) != -1)
+endfunction
+
+" call NERDTreeFind if NERDTree is active, current window contains a modifiable  file, and we're not in vimdiff
+function! SyncTree()
+  if &modifiable && IsNERDTreeOpen() && strlen(expand('%')) > 0 && !&diff
+    NERDTreeFind
+    wincmd p
+  endif
+endfunction
+
+" highlight currently open buffer in NERDTree
+autocmd BufEnter * call SyncTree()
+
 augroup ProjectDrawer
     autocmd!
     autocmd VimEnter * if argc() == 0 | NERDTree | endif
