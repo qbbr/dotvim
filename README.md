@@ -38,7 +38,7 @@ ln -s .vim/.vimrc
 `snipmate` - поддержка сниппетов  
 `surround`- работа со скобками/кавычками/тегами  
 `unimpaired`- перемещение строк в верх/низ  
-`vim-bash-snippets` - мои bash сниппеты  
+`vim-bash-snippets` - bash сниппеты ([vim-bash-snippets](https://github.com/qbbr/vim-bash-snippets))  
 `vim-colors-solarized` - solarized colorscheme  
 `vim-css3-syntax` - подсветка css3 файлов  
 `vim-fakeclip` - копирование vim &lt;-&gt; X  
@@ -48,8 +48,8 @@ ln -s .vim/.vimrc
 `vim-less` - подсветка less файлов  
 `vim-phpqa` - PHP QA Tools For Vim  
 `vim-startify` - start screen  
-`vim-symfony` - snippets for symfony2  
-`vim-twig` - подсветка twig файлов и snippets for snipmate  
+`vim-symfony` - symfony интеграция и сниппеты ([vim-symfony](https://github.com/qbbr/vim-symfony))  
+`vim-twig` - подсветка twig шаблонов и сниппеты ([vim-twig](https://github.com/qbbr/vim-twig))  
 `vim-vue` - подсветка vue файлов
 
 ## Hotkeys
