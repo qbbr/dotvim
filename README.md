@@ -22,7 +22,7 @@ ln -s .vim/.vimrc
 
 ## Screenshot
 
-![qbbr-vim](https://i.imgur.com/wU8VET1.png)
+![qbbr-vim](https://i.imgur.com/AQSqLeb.png)
 
 ## Bundles
 
