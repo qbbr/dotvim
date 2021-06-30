@@ -57,6 +57,7 @@ ln -s .vim/.vimrc
 `,` - &lt;leader&gt;
 
 `;` - поиск и замена слова под курсором  
+`<space>` - выключает подсветку поиска :nohlsearch  
 `_$` - удалить лишние отступы в конце строк (StripTrailingWhitespaces)
 
 `<C-c>/<C-v>` - copy-pase (xclip)  
