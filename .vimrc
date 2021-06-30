@@ -45,7 +45,7 @@ set nofoldenable                            " выключаем фолдинг 
 "set foldmethod=indent                       " фолдинг по отступам
 set foldcolumn=1                            " колонка, чтобы показывать плюсики для скрытия блоков кода
 
-"set hlsearch                                " включаем подсветку выражения, которое ищется в тексте (:nohlsearch отключает подсветку)
+set hlsearch                                " включаем подсветку выражения, которое ищется в тексте (:nohlsearch,:noh отключает подсветку)
 set incsearch                               " поиск по набору текста
 set ignorecase                              " игнорировать регистр
 set smartcase                               " если искомое выражения содержит символы в верхнем регистре – ищет с учётом регистра, иначе – без учёта
@@ -150,10 +150,13 @@ imap >Ins> <Esc>i
 let mapleader = ","
 let g:mapleader = ","
 
-" поиск и замена слова под курсором
+" <;> - поиск и замена слова под курсором
 nmap ; :%s/\<<c-r>=expand("<cword>")<cr>\>/
 
-" удаляем пробелы в конце строк (_$)
+" <space> - выключает подсветку поиска :nohlsearch
+nnoremap <silent> <Space> :noh<Bar>:echo<CR>
+
+" <_$> - удаляем пробелы в конце строк
 function! StripTrailingWhitespaces(command)
     " save last search, and cursor position
     let _s=@/
