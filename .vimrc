@@ -190,10 +190,6 @@ let g:NERDDefaultAlign = 'left'
 let g:NERDCommentEmptyLines = 1
 
 " @plugin: nerdtree
-" F4 - toggle NERDTree
-nmap <F4> :NERDTreeToggle<CR>
-vmap <F4> <esc>:NERDTreeToggle<CR>
-imap <F4> <esc>:NERDTreeToggle<CR>
 let g:NERDTreeDirArrowExpandable = '~'
 let g:NERDTreeDirArrowCollapsible = '+'
 let NERDTreeIgnore=['\.pyc', '\.swp', '\.git$', '\.hg', '\.svn', '\.bzr']
@@ -212,11 +208,25 @@ function! SyncTree()
     endif
 endfunction
 
+" highlight currently open buffer in NERDTree
 autocmd BufEnter * call SyncTree()
+
+" fix double event on toggle
+function! ToggleNerdTree()
+  set eventignore=BufEnter
+  NERDTreeToggle
+  set eventignore=
+endfunction
+
+" F4 - toggle NERDTree
+nmap <F4> :call ToggleNerdTree()<CR>
+vmap <F4> <esc>:call ToggleNerdTree()<CR>
+imap <F4> <esc>:call ToggleNerdTree()<CR>
 
 " exit Vim if NERDTree is the only window left
 autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
 
+" run as project
 augroup ProjectDrawer
     autocmd!
     autocmd VimEnter * if argc() == 0 | NERDTree | endif
