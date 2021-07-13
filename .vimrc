@@ -55,9 +55,9 @@ set backupdir=~/.vim/backups/               " сюда
 
 " директория для swap файлов
 if empty($TMPDIR) " проверяем ENV переменную TMPDIR (android termux fix)
-	set dir=/tmp
+    set dir=/tmp
 else
-	set dir=$TMPDIR
+    set dir=$TMPDIR
 endif
 
 set scrolljump=7                            " минимальное количество строк остающихся выше/ниже курсора
@@ -202,19 +202,20 @@ let NERDTreeShowHidden=1
 " @see: https://codeyarns.com/tech/2014-05-05-how-to-highlight-current-file-in-nerdtree.html
 " check if NERDTree is open or active
 function! IsNERDTreeOpen()
-  return exists('t:NERDTreeBufName') && (bufwinnr(t:NERDTreeBufName) != -1)
+    return exists('t:NERDTreeBufName') && (bufwinnr(t:NERDTreeBufName) != -1)
 endfunction
 
-" call NERDTreeFind if NERDTree is active, current window contains a modifiable  file, and we're not in vimdiff
+" call NERDTreeFind if NERDTree is active, current window contains a modifiable file, and we're not in vimdiff
 function! SyncTree()
-  if &modifiable && IsNERDTreeOpen() && strlen(expand('%')) > 0 && !&diff
-    NERDTreeFind
-    wincmd p
-  endif
+    if &modifiable && IsNERDTreeOpen() && strlen(expand('%')) > 0 && !&diff
+        NERDTreeFind | wincmd p
+    endif
 endfunction
 
-" highlight currently open buffer in NERDTree
 autocmd BufEnter * call SyncTree()
+
+" exit Vim if NERDTree is the only window left
+autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
 
 augroup ProjectDrawer
     autocmd!
