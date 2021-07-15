@@ -118,14 +118,16 @@ filetype plugin on                          " включить загрузку 
 filetype indent on                          " включить загрузку сценариев настройки отступов
 
 set t_Co=256                                " включаем поддержку 256 цветов
-set background=dark
+if $THEME_MODE == "light"
+	set background=dark
+elseif $THEME_MODE == "dark"
+	set background=light
+else
+	set background=dark
+endif
 
 " тема
 " https://github.com/altercation/vim-colors-solarized
-let g:solarized_termcolors=16
-"let g:solarized_termtrans=1
-let g:solarized_italic=0
-let g:solarized_contrast="high"
 colorscheme solarized
 
 autocmd FileType php,html,twig,yaml,javascript,css,scss set expandtab
@@ -284,6 +286,10 @@ imap <F6> <esc>:bp<cr>i
 nmap <F7> :bn<cr>
 vmap <F7> <esc>:bn<cr>i
 imap <F7> <esc>:bn<cr>i
+
+" F9 - toggle bg
+call togglebg#map("<F9>")
+"nnoremap <F9> :let &bg=(&bg=='light'?'dark':'light')<cr>
 
 " netrw
 let g:netrw_banner = 0
