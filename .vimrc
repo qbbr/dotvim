@@ -141,6 +141,9 @@ autocmd BufNewFile,BufRead *.ts setlocal filetype=javascript
 " markdown
 autocmd BufNewFile,BufRead *.md,*.markdown setlocal filetype=ghmarkdown
 
+" enable italic
+highlight Comment cterm=italic gui=italic
+
 "=======================
 "=== горячие клавиши ===
 "=======================
