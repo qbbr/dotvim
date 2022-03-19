@@ -16,6 +16,10 @@
 " @plugin: pathogen
 execute pathogen#infect()
 
+" for `:!<bash-alias>`
+" https://stackoverflow.com/a/19819036
+let $BASH_ENV="~/.bash_aliases"
+
 set nocompatible                            " режим несовместимый с Vi
 set tabstop=4                               " количество пробелов для табуляции
 set softtabstop=4                           " количество пробелов добавляемое при нажатии на клавишу табуляции
