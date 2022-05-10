@@ -317,7 +317,21 @@ imap <F12> <esc>:Vexplore<cr>i
 set wildignore+=*/app/cache/*,*/app/logs/*,*/var/cache/*,*/var/log/*,*/node_modules/*,*/vendor/*,*/log/*,*/tmp/*,*.so,*.swp,*.zip
 
 " @plugin: vim-startify
-let g:startify_custom_header = []
+let g:qbbrascii = [
+\ '  ____  ____  ____  _____           ',
+\ ' / __ \|  _ \|  _ \|  __ \          ',
+\ '| |  | | |_) | |_) | |__) |         ',
+\ '| |  | |  _ <|  _ <|  _  /          ',
+\ '| |__| | |_) | |_) | | \ \          ',
+\ ' \___\_\____/|____/|_| _\_\         ',
+\ '     _       _         _            ',
+\ '  __| | ___ | |___   _(_)_ __ ___   ',
+\ ' / _` |/ _ \| __\ \ / / | `_ ` _ \  ',
+\ '| (_| | (_) | |_ \ V /| | | | | | | ',
+\ ' \__,_|\___/ \__| \_/ |_|_| |_| |_| ',
+\ '                                    ',
+\ ]
+let g:startify_custom_header = 'startify#pad(startify#fortune#cowsay(startify#pad(g:qbbrascii)))'
 
 " @plugin: vim-javascript
 let g:javascript_plugin_jsdoc = 1
