@@ -43,9 +43,6 @@
 [submodule "bundle/vim-flavored-markdown"]
 	path = bundle/vim-flavored-markdown
 	url = https://github.com/jtratner/vim-flavored-markdown.git
-[submodule "bundle/vim-phpqa"]
-	path = bundle/vim-phpqa
-	url = https://github.com/joonty/vim-phpqa.git
 [submodule "bundle/vim-javascript"]
 	path = bundle/vim-javascript
 	url = https://github.com/pangloss/vim-javascript.git
@@ -73,3 +70,6 @@
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
 	url = https://github.com/preservim/nerdtree.git
+[submodule "bundle/syntastic"]
+	path = bundle/syntastic
+	url = https://github.com/vim-syntastic/syntastic.git

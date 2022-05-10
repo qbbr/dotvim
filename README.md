@@ -36,6 +36,7 @@ ln -s .vim/.vimrc
 `nginx.vim` - подсветка nginx файлов (/etc/nginx/*)  
 `repeat` - повторение операций  
 `snipmate` - поддержка сниппетов  
+`syntastic` - linter--
 `surround`- работа со скобками/кавычками/тегами  
 `unimpaired`- перемещение строк в верх/низ  
 `vim-bash-snippets` - bash сниппеты ([vim-bash-snippets](https://github.com/qbbr/vim-bash-snippets))  
@@ -46,7 +47,6 @@ ln -s .vim/.vimrc
 `vim-fugitive` - git wrapper  
 `vim-javascript` - улучшенная подсветка js  
 `vim-less` - подсветка less файлов  
-`vim-phpqa` - PHP QA Tools For Vim  
 `vim-startify` - start screen  
 `vim-symfony` - symfony интеграция и сниппеты ([vim-symfony](https://github.com/qbbr/vim-symfony))  
 `vim-twig` - подсветка twig шаблонов и сниппеты ([vim-twig](https://github.com/qbbr/vim-twig))  

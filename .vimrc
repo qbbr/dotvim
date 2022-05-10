@@ -106,6 +106,9 @@ set statusline+=\ %{fugitive#statusline()}  " git
 set statusline+=%=                          " выравнивание по правой стороне (align right)
 set statusline+=%2*0x%-8B\                  " текущий символ
 set statusline+=%-10.(%l,%c%V%)\ %<%P       " номер строки, номер столбца
+set statusline+=\ %#warningmsg#             " syntastic
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
 set laststatus=2
 
 set smartindent                             " умные отступы после '{'
@@ -313,14 +316,17 @@ imap <F12> <esc>:Vexplore<cr>i
 " @plugin: ctrlp
 set wildignore+=*/app/cache/*,*/app/logs/*,*/var/cache/*,*/var/log/*,*/node_modules/*,*/vendor/*,*/log/*,*/tmp/*,*.so,*.swp,*.zip
 
-" @plugin: vim-phpqa
-" don't run messdetector on save (default = 1)
-let g:phpqa_messdetector_autorun = 0
-" don't run codesniffer on save (default = 1)
-let g:phpqa_codesniffer_autorun = 0
-
 " @plugin: vim-startify
 let g:startify_custom_header = []
 
 " @plugin: vim-javascript
 let g:javascript_plugin_jsdoc = 1
+
+" @plugin: vim-syntastic
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_aggregate_errors = 0
+"let g:syntastic_python_pylint_args = '-E'
+let g:syntastic_quiet_messages = { "type": "style", "!level": "errors" }
