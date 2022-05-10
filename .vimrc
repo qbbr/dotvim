@@ -241,7 +241,7 @@ autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTr
 " run as project
 augroup ProjectDrawer
     autocmd!
-    autocmd VimEnter * if argc() == 0 | NERDTree | endif
+    autocmd VimEnter * if argc() == 0 | Startify | NERDTree | wincmd l | endif
 augroup END
 
 " NERDTree file highlighting
