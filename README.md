@@ -53,6 +53,10 @@ ln -s .vim/.vimrc
 `vim-twig` - подсветка twig шаблонов и сниппеты ([vim-twig](https://github.com/qbbr/vim-twig))  
 `vim-vue` - подсветка vue файлов
 
+### Piggy bank (not installed)
+
+ * [yesod.vim](https://github.com/alx741/yesod.vim) - Haskell Yesod web framework vim plugin
+
 ## Hotkeys
 
 `,` - &lt;leader&gt;
@@ -74,4 +78,4 @@ ln -s .vim/.vimrc
 `<F12>` - netrw
 
 `<C-p>` - ctrlp  
-`<C-y>,` - zencoding
+`<C-y>,` - zencoding  
