@@ -42,6 +42,7 @@ ln -s .vim/.vimrc
 `vim-bash-snippets` - bash сниппеты ([vim-bash-snippets](https://github.com/qbbr/vim-bash-snippets))  
 `vim-colors-solarized` - solarized colorscheme  
 `vim-css3-syntax` - подсветка css3 файлов  
+`vim-dadbod` - modern database interface for Vim  
 `vim-dotenv` - basic support for .env and Procfile  
 `vim-flavored-markdown` - подсветка markdown  
 `vim-fugitive` - git wrapper  

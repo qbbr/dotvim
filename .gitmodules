@@ -73,3 +73,6 @@
 [submodule "bundle/vim-dotenv"]
 	path = bundle/vim-dotenv
 	url = https://github.com/tpope/vim-dotenv.git
+[submodule "bundle/vim-dadbod"]
+	path = bundle/vim-dadbod
+	url = https://github.com/tpope/vim-dadbod.git
