@@ -36,7 +36,7 @@ ln -s .vim/.vimrc
 `nginx.vim` - подсветка nginx файлов (/etc/nginx/*)  
 `repeat` - повторение операций  
 `snipmate` - поддержка сниппетов  
-`syntastic` - linter--
+`syntastic` - linter  
 `surround`- работа со скобками/кавычками/тегами  
 `unimpaired`- перемещение строк в верх/низ  
 `vim-bash-snippets` - bash сниппеты ([vim-bash-snippets](https://github.com/qbbr/vim-bash-snippets))  
