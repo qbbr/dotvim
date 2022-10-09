@@ -125,6 +125,9 @@ filetype plugin on                          " включить загрузку 
 filetype indent on                          " включить загрузку сценариев настройки отступов
 
 set t_Co=256                                " включаем поддержку 256 цветов
+set termguicolors                           " включаем поддержку true-color
+
+" todo@qbbr: n to refactor (.xinitrc: SOLARIZED_DARK/SOLARIZED_LIGHT)
 if $THEME_MODE == "light"
 	set background=dark
 elseif $THEME_MODE == "dark"
@@ -134,7 +137,7 @@ else
 endif
 
 " тема
-" https://github.com/altercation/vim-colors-solarized
+" https://github.com/ericbn/vim-solarized
 colorscheme solarized
 
 autocmd FileType php,html,twig,yaml,javascript,css,scss set expandtab
@@ -297,6 +300,7 @@ nmap <F7> :bn<cr>
 vmap <F7> <esc>:bn<cr>i
 imap <F7> <esc>:bn<cr>i
 
+" @plugin: vim-togglebg
 " F9 - toggle bg
 call togglebg#map("<F9>")
 "nnoremap <F9> :let &bg=(&bg=='light'?'dark':'light')<cr>

@@ -40,7 +40,6 @@ ln -s .vim/.vimrc
 `surround`- работа со скобками/кавычками/тегами  
 `unimpaired`- перемещение строк в верх/низ  
 `vim-bash-snippets` - bash сниппеты ([vim-bash-snippets](https://github.com/qbbr/vim-bash-snippets))  
-`vim-colors-solarized` - solarized colorscheme  
 `vim-css3-syntax` - подсветка css3 файлов  
 `vim-dadbod` - modern database interface for Vim  
 `vim-dotenv` - basic support for .env and Procfile  
@@ -48,6 +47,7 @@ ln -s .vim/.vimrc
 `vim-fugitive` - git wrapper  
 `vim-javascript` - улучшенная подсветка js  
 `vim-less` - подсветка less файлов  
+`vim-solarized` - solarized colorscheme  
 `vim-startify` - start screen  
 `vim-symfony` - symfony интеграция и сниппеты ([vim-symfony](https://github.com/qbbr/vim-symfony))  
 `vim-twig` - подсветка twig шаблонов и сниппеты ([vim-twig](https://github.com/qbbr/vim-twig))  

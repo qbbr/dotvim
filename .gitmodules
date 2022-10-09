@@ -55,9 +55,6 @@
 [submodule "bundle/vim-bash-snippets"]
 	path = bundle/vim-bash-snippets
 	url = https://github.com/qbbr/vim-bash-snippets.git
-[submodule "bundle/vim-colors-solarized"]
-	path = bundle/vim-colors-solarized
-	url = https://github.com/altercation/vim-colors-solarized
 [submodule "bundle/bufexplorer"]
 	path = bundle/bufexplorer
 	url = https://github.com/jlanzarotta/bufexplorer.git
@@ -76,3 +73,9 @@
 [submodule "bundle/vim-dadbod"]
 	path = bundle/vim-dadbod
 	url = https://github.com/tpope/vim-dadbod.git
+[submodule "bundle/vim-solarized"]
+	path = bundle/vim-solarized
+	url = https://github.com/ericbn/vim-solarized.git
+[submodule "bundle/vim-togglebg"]
+	path = bundle/vim-togglebg
+	url = https://github.com/rakr/vim-togglebg.git
