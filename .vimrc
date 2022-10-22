@@ -128,10 +128,7 @@ set t_Co=256                                " включаем поддержк�
 " todo@qbbr: n disable on $TERM=linux
 set termguicolors                           " включаем поддержку true-color
 
-" todo@qbbr: n to refactor (.xinitrc: SOLARIZED_DARK/SOLARIZED_LIGHT)
-if $THEME_MODE == "light"
-	set background=dark
-elseif $THEME_MODE == "dark"
+if $THEME_MODE_LIGHT
 	set background=light
 else
 	set background=dark
