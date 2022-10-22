@@ -125,6 +125,7 @@ filetype plugin on                          " включить загрузку 
 filetype indent on                          " включить загрузку сценариев настройки отступов
 
 set t_Co=256                                " включаем поддержку 256 цветов
+" todo@qbbr: n disable on $TERM=linux
 set termguicolors                           " включаем поддержку true-color
 
 " todo@qbbr: n to refactor (.xinitrc: SOLARIZED_DARK/SOLARIZED_LIGHT)
