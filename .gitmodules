@@ -78,4 +78,4 @@
 	url = https://github.com/ericbn/vim-solarized.git
 [submodule "bundle/vim-togglebg"]
 	path = bundle/vim-togglebg
-	url = https://github.com/rakr/vim-togglebg.git
+	url = https://github.com/qbbr/vim-togglebg.git
