@@ -50,6 +50,7 @@ ln -s .vim/.vimrc
 `vim-solarized` - solarized colorscheme  
 `vim-startify` - start screen  
 `vim-symfony` - symfony интеграция и сниппеты ([vim-symfony](https://github.com/qbbr/vim-symfony))  
+`vim-togglebg` - toggle dark/light mode  
 `vim-twig` - подсветка twig шаблонов и сниппеты ([vim-twig](https://github.com/qbbr/vim-twig))  
 `vim-vue` - подсветка vue файлов
 
