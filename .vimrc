@@ -124,9 +124,12 @@ filetype on                                 " включить определе�
 filetype plugin on                          " включить загрузку модулей
 filetype indent on                          " включить загрузку сценариев настройки отступов
 
-set t_Co=256                                " включаем поддержку 256 цветов
-" todo@qbbr: n disable on $TERM=linux
-set termguicolors                           " включаем поддержку true-color
+if $TERM != "linux"
+    set t_Co=256                            " включаем поддержку 256 цветов
+    set termguicolors                       " включаем поддержку true-color
+else
+    set t_Co=8
+endif
 
 if $THEME_MODE_LIGHT
     set background=light
