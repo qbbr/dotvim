@@ -129,9 +129,9 @@ set t_Co=256                                " включаем поддержк�
 set termguicolors                           " включаем поддержку true-color
 
 if $THEME_MODE_LIGHT
-	set background=light
+    set background=light
 else
-	set background=dark
+    set background=dark
 endif
 
 " тема
@@ -184,9 +184,11 @@ nmap _$ :call StripTrailingWhitespaces("%s/\\s\\+$//e")<CR>
 
 " copy-paste
 " @depends: xclip
+" vim can't use <C-S-c> T_T, its for terminal
 vmap <C-c> y:call system("xclip -i -selection clipboard", getreg("\""))<CR>:call system("xclip -i", getreg("\""))<CR>
-map <C-v> :call setreg("\"",system("xclip -o -selection clipboard"))<CR>p
-imap <C-v> <Esc><C-v>a
+" C-S-V - from .Xresources
+"map <C-S-v> :call setreg("\"",system("xclip -o -selection clipboard"))<CR>p
+"imap <C-S-v> <Esc><C-S-v>a
 nmap <MiddleMouse> :-1r !xclip -o -selection primary<CR>$
 imap <MiddleMouse> <Esc><MiddleMouse>a
 

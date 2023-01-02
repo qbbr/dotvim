@@ -66,7 +66,7 @@ ln -s .vim/.vimrc
 `<space>` - выключает подсветку поиска :nohlsearch  
 `_$` - удалить лишние отступы в конце строк (StripTrailingWhitespaces)
 
-`<C-c>/<C-v>` - copy-pase (xclip)  
+`<C-c>/<C-S-v>` - copy-pase (xclip)  
 `<MiddleMouse>` - pase (xclip)
 
 `<C-Up>/<C-Down>`  - переместить строку или множество выделенных строк вверх/вниз на одну строку (unimpaired)  
