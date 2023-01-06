@@ -12,6 +12,8 @@
 	| (_| | (_) | |_ \ V /| | | | | | |
 	 \__,_|\___/ \__| \_/ |_|_| |_| |_|
 
+[![Stand With Ukraine](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/badges/StandWithUkraine.svg)](https://github.com/vshymanskyy/StandWithUkraine/blob/main/docs/README.md)
+
 ## Installation
 
 ```bash
