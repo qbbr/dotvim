@@ -62,23 +62,18 @@ ln -s .vim/.vimrc
 
 ## Hotkeys
 
-`,` - &lt;leader&gt;
-
-`;` - поиск и замена слова под курсором  
-`<space>` - выключает подсветку поиска :nohlsearch  
-`_$` - удалить лишние отступы в конце строк (StripTrailingWhitespaces)
-
-`<C-c>/<C-S-v>` - copy-pase (xclip)  
-`<MiddleMouse>` - pase (xclip)
-
-`<C-Up>/<C-Down>`  - переместить строку или множество выделенных строк вверх/вниз на одну строку (unimpaired)  
-`,c<space>` - закомментировать/раскомментировать код (nerdcommenter)
-
-`<F4>` - toggle nerdtree  
-`<F5>` - toggle bufexplorer  
-`<F6>` - prev buffer  
-`<F7>` - next buffer  
-`<F12>` - netrw
-
-`<C-p>` - ctrlp  
-`<C-y>,` - zencoding  
+ * `,` - &lt;leader&gt;
+ * `;` - search and replace under cursor
+ * `<space>` - `:nohlsearch`
+ * `_$` - (StripTrailingWhitespaces fn)
+ * `<C-c>/<C-S-v>` - copy-pase (xclip)
+ * `<MiddleMouse>` - pase (xclip)
+ * `<C-Up>/<C-Down>` - unimpaired
+ * `,c<space>` - nerdcommenter
+ * `<F4>` - toggle nerdtree
+ * `<F5>` - toggle bufexplorer
+ * `<F6>` - prev buffer
+ * `<F7>` - next buffer
+ * `<F12>` - netrw
+ * `<C-p>` - ctrlp
+ * `<C-y>,` - zencoding
