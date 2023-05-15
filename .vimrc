@@ -100,7 +100,8 @@ set statusline+=%2*%-3.3n%0*\               " номер буфера
 set statusline+=%f\                         " название файла
 set statusline+=%h%1*%m%r%w%0*              " флаги
 set statusline+=[%{&encoding},              " кодировка
-set statusline+=%{&fileformat}]             " формат файла
+set statusline+=%{&fileformat}              " формат файла
+set statusline+=%{(&bomb?\",BOM\":\"\")}]   " проверка на BOM
 set statusline+=\ %{strlen(&ft)?&ft:'none'} " тип файла
 set statusline+=\ %{fugitive#statusline()}  " git
 set statusline+=%=                          " выравнивание по правой стороне (align right)
