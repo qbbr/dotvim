@@ -22,7 +22,8 @@ ln -s .vim/.vimrc
 
 ## Screenshot
 
-![qbbr-vim](https://i.imgur.com/AQSqLeb.png)
+![qbbr-vim-darl](https://i.imgur.com/KOGeqCi.png)
+![qbbr-vim-light](https://i.imgur.com/uy73JOf.png)
 
 ## Bundles
 
@@ -53,6 +54,7 @@ ln -s .vim/.vimrc
  * vim-togglebg
  * [vim-twig](https://github.com/qbbr/vim-twig)
  * vim-vue
+ * [vim-rust](https://github.com/rust-lang/rust.vim)
 
 ### Piggy bank (not installed)
 
