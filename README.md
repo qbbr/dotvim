@@ -74,6 +74,7 @@ ln -s .vim/.vimrc
  * `<F5>` - toggle bufexplorer
  * `<F6>` - prev buffer
  * `<F7>` - next buffer
+ * `<F9>` - switch light/dark mode
  * `<F12>` - netrw
  * `<C-p>` - ctrlp
  * `<C-y>,` - zencoding
